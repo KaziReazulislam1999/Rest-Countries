@@ -1,0 +1,144 @@
+@import url('https://fonts.google.com/specimen/Nunito+Sans');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding: 30px;
+    margin: auto;
+
+
+}
+h1{
+    margin: 0;
+}
+
+/* Theme button styling */
+
+.btn-toggle{
+    border: none;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+.btn-toggle .fa-solid{
+    display: none;
+}
+
+body.dark .btn-toggle .fa-solid{
+    display: inline-block;
+
+}
+
+body.dark .btn-toggle .fa-regular{
+    display: none;
+
+}
+
+/* Input styling */
+.search {
+    border: none;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    min-width: 300px;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+
+}
+
+/* Dropdown styling */
+
+.dropdown{
+    background-color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown .fa-chevron-down{
+    margin-left: 20px;
+}
+
+.dropdown ul {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+    left: 0px;
+    top: 100%;
+    list-style-type: none;
+    display: none;
+    
+}
+
+.dropdown ul li{
+    margin: 5px 0px;
+}
+
+.dropdown.open ul{
+    display: block;
+}
+
+/* Country styling */
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    overflow: hidden;
+    cursor: pointer;
+    margin: 40px;
+   
+
+}
+.card-body{
+    padding: 30px;
+}
+.card-body h2{
+    margin-top: 0px;
+}
+
+.container.countries{
+  justify-content: center;
+
+    
+}
